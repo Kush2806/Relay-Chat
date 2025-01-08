@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Page</title>
+    <link rel="stylesheet" href="css/match.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Video Section -->
+        <div class="video-section">
+            <div class="video-stream" id="remote-video">
+                <!-- Video of matched user -->
+                <video id="remoteVideo" autoplay></video>
+            </div>
+            <div class="video-stream" id="local-video">
+                <!-- User's own video -->
+                <video id="localVideo" autoplay muted></video>
+            </div>
+        </div>
+
+        <!-- Chat Section -->
+        <div class="chat-section">
+            <div class="chat-display" id="chat-display">
+                <!-- Chat messages will be displayed here -->
+            </div>
+            <div class="chat-input">
+                <input type="text" id="message" placeholder="Type a message..." />
+                <button id="send-message">Send</button>
+            </div>
+        </div>
+
+        <!-- Footer with buttons -->
+        <div class="footer-buttons">
+            <button id="new-match">New Match</button>
+            <button id="close-session">Close</button>
+        </div>
+    </div>
+
+    <script src="js/chat.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1.5.0/dist/sockjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/stompjs@2.3.3/lib/stomp.min.js"></script>
+</body>
+</html>
