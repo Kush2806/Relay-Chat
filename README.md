@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # RelayChat Project
 
 ## Overview
